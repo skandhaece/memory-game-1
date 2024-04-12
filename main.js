@@ -37,6 +37,8 @@ async function levelDecider(level ,audio){
         if(keyPressed == answerKeyForPress){
             points = points + 1;
             timesUserClicked = timesUserClicked + 1;
+            var levelUp = new Audio("./music/button-clicking.mp3");
+            levelUp.play();
         }
         if(level == points){
             
